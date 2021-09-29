@@ -1,3 +1,4 @@
+/* Allgemine Einstellung */
 *,
 *::after,
 *::before {
@@ -19,6 +20,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+
   font-size: 16px;
   background-image: url(images/pattern-background-desktop.svg);
   background-color: var(--main-background-color);
@@ -26,12 +28,7 @@ body {
   background-size: 100%;
 }
 
-p {
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  color: var(--p-tag-color);
-  line-height: 1.5;
-}
+/* Schrift Einstellung */
 
 .container > h1 {
   font-family: "Red Hat Display", sans-serif;
@@ -47,6 +44,15 @@ h2 {
   font-weight: 900;
   font-size: 1.25rem;
 }
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--p-tag-color);
+  line-height: 1.5;
+}
+
+/* Contanier-settings */
 
 .container {
   height: 700px;
@@ -71,6 +77,7 @@ h2 {
     ".";
   text-align: center;
   border-radius: 15px;
+  margin: 1rem auto;
 }
 
 .container > img {
@@ -104,23 +111,24 @@ h2 {
   margin-bottom: 0.9375rem;
 }
 
-.mini-grid {
+.payment-infos-text {
   position: relative;
   right: 25px;
   text-align: left;
   line-height: 1.4;
 }
 
-.mini-grid ~ p:hover {
+.payment-infos-text ~ p:hover {
   color: var(--button-buy-color);
   cursor: pointer;
   font-weight: 800;
 }
 
+/* Buttons */
+
 .buy-button {
   grid-area: buy-button;
   background-color: var(--button-buy-color);
-  width: 21.875rem;
   margin-top: 0.9375rem;
   width: 21.875rem;
   height: 2.8125rem;
@@ -152,3 +160,9 @@ h2 {
 .cancel-button:hover {
   cursor: pointer;
 }
+
+/*  @media screen and (max-width: 450) {
+  main {
+    padding: 100px;
+  }
+}*/
